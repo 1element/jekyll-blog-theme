@@ -44,13 +44,12 @@ show_drafts: nil
 
 relative_permalinks: true
 
-permalink:     :title
+permalink: /:title/
 paginate_path: 'page:num'
 paginate: 10
 
 # Build settings
 markdown: kramdown
-permalink: pretty
 
 # sass support
 sass:
