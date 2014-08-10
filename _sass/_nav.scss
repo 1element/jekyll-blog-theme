@@ -1,5 +1,5 @@
 .site-nav {
-    background:#fff;
+    background:rgba(24, 164, 237, 0.85);
     height:80px;
     position:absolute;
     left:0;
@@ -13,6 +13,19 @@
     
     .caret {
         opacity:0.2;
+    }
+    
+    .btn-outline {
+      border-color: #fff;
+      border-radius: 0;
+      color: #fff;
+      transition: background-color 300ms ease-out 0s;
+    }
+    
+    .btn-outline:hover {
+      opacity: 0.7;
+      background: rgba(0, 0, 0, 0.75);
+      border-color: #1b3544;
     }
     
     .brand img {
