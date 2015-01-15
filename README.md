@@ -1,63 +1,42 @@
-# Jekyll Incorporated
-Modern Jekyll based blog. Great for companies, products or anything. See live at [blog.sendtoinc.com](http://blog.sendtoinc.com)
+# Jekyll Blog Theme
+
+Blog theme for [Jekyll](http://jekyllrb.com), a static site generator written in Ruby.
+
+Based upon [Jekyll Incorporated Theme](https://github.com/kippt/jekyll-incorporated) by Kippt Inc.
+
+Slightly modified and simplified for my needs. Uses Jekyll's built-in support for Sass (which was introduced in Jekyll 2.0).
+
 
 ## Installation & Usage
-    bundle install
-    jekyll serve --watch
 
-_Note: Requires Ruby version 1.9.3 =>. For example use [rbenv](https://github.com/sstephenson/rbenv)_   
-    
+```shell
+gem install jekyll
+git clone https://github.com/1element/jekyll-blog-theme.git .
+jekyll serve --watch
+```
+
+
 ## Configuration
-Edit: _config.yml (general options), main.css (theme colors &amp; fonts)
+
+Edit: ```_config.yml``` (general options) and ```_sass/*.scss``` for stylesheets (theme colors &amp; fonts).
 
 ```
-jekyll-incorporated/
-├── _config.yml
-├── _assets/
-    ├── stylesheets/
-        ├── main.scss
+jekyll-blog-theme/
++-- _config.yml
++-- _sass/
+    +-- _animate.scss
+    +-- _article.scss
+    +-- _base.scss
+    +-- _bootstrap.scss
+    +-- _icons.scss
+    +-- _nav.scss
+    +-- _responsive.scss
+    +-- _syntax.scss
 ```
 
-_Note: when editing _config.yml, you need to restart jekyll to see the changes.__
+_Note: when editing _config.yml, you need to restart jekyll to see the changes._
 
-    
-## Publish to Github Pages
-1. Add your domain to _CNAME_
-2. Edit your repo address at _Rakefile_
-    
-Run rake task. **NOTE: It will deploy the generated site to _gh-pages_ branch overwriting it**    
-``` 
-rake site:publish
-```
 
-## Usage examples
+## Copyright and License
 
-* Adroll Engineering http://tech.adroll.com/
-* Brace.io blog http://blog.brace.io/
-* Spark.io blog http://blog.spark.io/
-* Department of Better Technology http://blog.dobt.co/
-
-## Authors
-
-Originally build for [sendtoinc.com](https://sendtoinc.com), your workspace for sharing and organizing knowledge
-
-**Karri Saarinen**
-
-+ [http://twitter.com/karrisaarinen](http://twitter.com/karrisaarinen)
-+ [http://github.com/ksaa](http://github.com/ksaa)
-
-**Jori Lallo**
-
-+ [http://twitter.com/jorilallo](http://twitter.com/jorilallo)
-+ [http://github.com/jorde](http://github.com/jorilallo)
-
-## Todo:
-
-+ Documentation
-+ Less config files
-+ Better deploy scripts
-
-## Copyright and license
-
-Copyright 2013 Kippt Inc. under [The MIT License ](LICENSE)
-
+Copyright 2013 Kippt Inc. under [The MIT License](LICENSE)
